@@ -4,5 +4,69 @@
     --grey-700: hsl(0, 0%, 20%);
     --grey-800: hsl(0, 0%, 12%);
     --grey-900: hsl(0, 0%, 8%);
-    
+    --fuente: 'Inter';
+}
+/*globales*/
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*,*::before, *::after{
+    box-sizing: inherit;
+}
+body{
+    font-family: var(--fuente);
+    background-color: var(--grey-900);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+a{
+    text-decoration: none;
+    color: var(--white);
+}
+p{
+    color: var(--green);
+}
+/*card perfil*/
+main{
+    background-color: var(--grey-800);
+    border-radius: 1rem;
+    text-align: center;
+    width: 30rem;
+    padding: 3rem;
+}
+.perfil__imagen img{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+.perfil__nombre{
+    color: var(--white);
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+.perfil__ubi{
+    color: var(--green);
+    font-size: 1.2rem;
+}
+.perfil__descripcion p{
+    color: var(--white);
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.links a{
+    background-color: var(--grey-700);
+    padding: 1.5rem;
+    width: 100%;
+    border-radius: 1rem;
+    margin-top: 1.5rem;
+    font-weight: bold;
+    font-size: 1rem;
 }
